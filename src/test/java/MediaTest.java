@@ -24,7 +24,18 @@ public class MediaTest {
      
          Assert.assertTrue(3.0 == Operaciones.media(3.0,3.0));
     }
-
+    
+    @Test
+    public void testMedia4(){
+     
+         Assert.assertTrue(7.5 == Operaciones.media(5.0,10.0));
+    }
+    
+    @Test
+    public void testMedia5(){
+     
+         Assert.assertTrue(5.0 == Operaciones.media(0.0,10.0));
+    }
 
     
     @Test(expected = AssertionError.class)
